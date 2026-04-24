@@ -1,14 +1,14 @@
-import { useState } from 'react'
+import RestaurantList from './components/RestaurantList'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <h1>Search Restaurants</h1>
+      <RestaurantList />
     </div>
-      
+
   )
 }
 
