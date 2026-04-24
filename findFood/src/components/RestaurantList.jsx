@@ -1,17 +1,4 @@
-import { useState, useEffect } from "react";
-import { fetchRestaurants } from "../services/restaurantService";
-
-const RestaurantList = () => {
-  const [restaurants, setRestaurants] = useState([]);
-
-  useEffect(() => {
-    const loadRestaurants = async () => {
-      const data = await fetchRestaurants();
-      setRestaurants(data);
-    };
-
-    loadRestaurants();
-  }, []);
+const RestaurantList = ({ restaurants = [] }) => {
 
   return (
     <div>
