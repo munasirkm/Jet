@@ -1,16 +1,12 @@
+import RestaurantCard from '../RestaurantCard/RestaurantCard.jsx';
+import './RestaurantList.css';
 const RestaurantList = ({ restaurants = [] }) => {
-
   return (
-    <div>
-      <h2>Restaurants</h2>
-      <div>
+    <div className="restaurant-list-wrapper">
+
+      <div className="restaurant-grid">
         {restaurants.map((restaurant) => (
-          <div key={restaurant.id}>
-            <h3>{restaurant.name}</h3>
-            <p>{restaurant.address}</p>
-            <p>Rating: {restaurant.rating}</p>
-            <p>Cuisines: {restaurant.cuisines}</p>
-          </div>
+          <RestaurantCard key={restaurant.id} restaurant={restaurant} />
         ))}
       </div>
     </div>
