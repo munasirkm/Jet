@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import RestaurantList from './components/RestaurantList';
-import SearchBar from './components/SearchBar';
+import RestaurantList from './components/RestaurantList/RestaurantList';
+import SearchBar from './components/SearchBar/SearchBar';
 import { fetchRestaurants } from './services/restaurantService';
 import './App.css';
 
