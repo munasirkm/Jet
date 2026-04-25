@@ -1,19 +1,20 @@
 .header {
+    width: 100%;
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
-    padding: 16px 0;
+
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 4px;
 }
 
 .header-container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 24px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .header-logo img {
@@ -35,4 +36,5 @@
     font-size: 16px;
     font-weight: 500;
     color: #666;
+    margin-right: 24px;
 }
