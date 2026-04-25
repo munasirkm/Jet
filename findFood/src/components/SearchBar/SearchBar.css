@@ -1,22 +1,35 @@
 
 .search-bar-container {
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background-color: #f6f3ef;
+    gap: 20px;
+}
+
+.search-bar-title {
+    flex-shrink: 0;
+}
+
+.search-bar-title h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #3b3a39;
 }
 
 .search-bar-input-group {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 600px; 
-    background-color: #fff;
-    border: 1px solid #dcdcdc;
+    
+    background-color: #dcdcdc;
+    border: 1px solid #0c0c0c;
     border-radius: 100px;
-    overflow: hidden; 
+    overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.2s ease-in-out;
+    flex-shrink: 0;
 }
 
 
@@ -29,7 +42,8 @@
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     outline: none;
-    color: #dcdcdc;
+    background-color: #dcdcdc;
+    color: #6d6d6d;
 }
 
 .search-bar-input::placeholder {
@@ -37,16 +51,20 @@
 }
 
 .search-bar-button {
-    background-color: #f36805; /* Official Just Eat Orange */
+    background-color: #f36805;
     color: white;
-    border: none;
+    border: 1px solid #0c0c0c;
     padding: 16px 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
     font-size: 18px;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     transition: background-color 0.2s ease;
     height: 100%;
+    border-radius: 100px;
 }
 
 .search-bar-button:hover {

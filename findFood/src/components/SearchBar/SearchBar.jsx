@@ -13,6 +13,9 @@ const SearchBar = ({ onSearch }) => {
 
     return (
         <form className="search-bar-container" onSubmit={handleSubmit}>
+            <div className="search-bar-title">
+                <h2><b>Restaurants </b>near you ! </h2>
+                </div>
             <div className="search-bar-input-group">
                 <input
                     type="text"
