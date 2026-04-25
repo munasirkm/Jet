@@ -1,0 +1,29 @@
+.empty-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.empty-list-card {
+  max-width: 520px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 16px;
+  padding: 1.75rem;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.empty-list-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.empty-list-card p {
+  margin: 0;
+  color: #666666;
+  line-height: 1.6;
+}
